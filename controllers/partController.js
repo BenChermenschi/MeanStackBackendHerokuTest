@@ -104,10 +104,15 @@ exports.putPart = function (req,res) {
     console.log(onderdeel);
     onderdeel.save(function (err,part) {
         if(err){
-            console.log(err);
-            res.send(err);
+            return res.status(500).json({
+                title:'Error occured',
+                error:err
+            });
         }else{
-            res.json(part);
+            res.status(200).json({
+                message: 'Success',
+                obj: part
+            }) ;
         }
     });
 
@@ -131,14 +136,17 @@ exports.deletePartAtId=function (req,res) {
 
 //post : update
 exports.postUpdatePartAtId = function(req,res){
-    Part.findOneAndUpdate({_id:req.params.id},req.body,{new:true},function(err,onderdeel)  {
+    Part.findByIdAndUpdate({_id:req.params.id},req.body,{new:true},function(err,onderdeel)  {
         if(err){
             console.log(err);
-            res.status(500).send({message:"could not find manufacturer at id : " + req.params.id});
+            res.status(500).send({message:"could not find part at id : " + req.params.id});
         }else{
             console.log("updating part : ");
             console.log(onderdeel);
-            res.json(onderdeel);
+            res.status(200).json({
+                message: 'Success',
+                obj: onderdeel
+            }) ;
         }
 
     })

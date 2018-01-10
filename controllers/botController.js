@@ -280,11 +280,15 @@ exports.putBot = function (req,res) {
     console.log(bot);
     bot.save(function (err,robot) {
         if(err){
-            console.log(err);
-            res.send(err);
+            return res.status(500).json({
+                title:'Error occured',
+                error:err
+            });
         }else{
-            console.log("found");
-            res.json(robot);
+            res.status(200).json({
+                message: 'Success',
+                obj: bot
+            }) ;
         }
     });
 };
@@ -298,7 +302,10 @@ exports.postUpdateBotAtId = function (req,res) {
         }else {
             console.log("updating bot  : ");
             console.log(bot);
-            res.json(bot);
+            res.status(200).json({
+                message: 'Success',
+                obj: bot
+            }) ;
         }
     })
 }

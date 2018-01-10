@@ -85,9 +85,15 @@ exports.putManufacturer = function (req,res) {
         console.log(req.body);
     leverancier.save(function (err,manufacturer) {
         if(err){
-            res.send(err);
+            return res.status(500).json({
+                title:'Error occured',
+                error:err
+            });
         }else{
-            res.json(manufacturer);
+            res.status(200).json({
+                message: 'Success',
+                obj: manufacturer
+            }) ;
         }
     });
 };
@@ -124,8 +130,10 @@ exports.postUpdateManufacturerAtId = function(req,res){
         }else{
             console.log("updating manufacturer : ");
             console.log(leverancier);
-            res.json(leverancier);
-        }
+            res.status(200).json({
+                message: 'Success',
+                obj: leverancier
+            }) ;
         
     })
 }
