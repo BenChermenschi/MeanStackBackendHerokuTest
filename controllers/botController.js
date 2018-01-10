@@ -302,7 +302,10 @@ exports.postUpdateBotAtId = function (req,res) {
         }else {
             console.log("updating bot  : ");
             console.log(bot);
-            res.json(bot);
+            res.status(200).json({
+                message: 'Success',
+                obj: bot
+            }) ;
         }
     })
 }

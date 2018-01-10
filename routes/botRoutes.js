@@ -13,7 +13,7 @@ botRouter.get('/creator/:creator',botController.getBotAtCreator);
 botRouter.put('/',botController.putBot);
 
 //update
-botRouter.put('/edit/:id',botController.postUpdateBotAtId);
+botRouter.post('/edit/:id',botController.postUpdateBotAtId);
 
 //delete
 botRouter.delete('/:id',botController.deleteBotAtId);
