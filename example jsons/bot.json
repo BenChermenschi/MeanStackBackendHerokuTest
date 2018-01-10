@@ -1,0 +1,14 @@
+{
+    "name":"",
+    "parts":{
+        "head":{part},
+        "body":{body},
+        "armL":{arm},
+        "armR":{arm},
+        "legs":{legs}
+    },
+    "description":"",
+    "popularity":5
+
+    
+}

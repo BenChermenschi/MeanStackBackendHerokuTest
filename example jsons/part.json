@@ -1,0 +1,17 @@
+{
+    "name":"",
+    "manufacturer":{manufacturer},
+    "type":"",
+    "set":"",
+    "stats":{
+        "armor":0,
+        "damage":0,
+    },
+    "skills":[
+        {skill},
+        {skill},
+        ...
+    ],
+    "description":"",
+    "weight":0
+}

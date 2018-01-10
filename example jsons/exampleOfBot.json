@@ -1,0 +1,98 @@
+//What a full returned json of a bot should kinda look like
+{
+  "creator":"The Baron",
+  "botname":"Mad Hatter",
+  "passcode":"Smoke Lingers",
+  "parts":{
+    "head":{
+      "manufacturer":{
+        "name":"Tin Hat Industries, Natar",
+        "description":"Experts at constructing logistic machines and steampowered mechs.",
+        "prefix":"THIN"
+      },
+      "partname":"DarkSteelHatter- Custom",
+      "passcode":"Smoke Lingers",
+      "type":"HEAD",
+      "stats":{
+        "armorRating":20,
+        "damageRating":10
+      },
+      "description":"This headpiece is made of refined darksteel and was commisioned by TheBaron himself.",
+      "set":"SteamWorks Mark VII:Overlord"
+    },
+    "body":{
+      "manufacturer":{
+        "name":"Tin Hat Industries, Natar",
+        "description":"Experts at constructing logistic machines and steampowered mechs.",
+        "prefix":"THIN"
+      },
+      "partname":"TheDevilsAdvocate - custom",
+      "passcode":"Smoke Lingers",
+      "type":"BODY",
+      "stats":{
+        "armorRating":50,
+        "damageRating":0
+      },
+      "description":"This diabolic chestpiece contains a quantomdrive aside from our reqular steam turbines.",
+      "set":"SteamWorks Mark VII:Overlord"
+    },
+    "armR":{
+      "manufacturer":{
+        "name":"Tin Hat Industries, Natar",
+        "description":"Experts at constructing logistic machines and steampowered mechs.",
+        "prefix":"THIN"
+      },
+      "partname":"Gods Right Hand",
+      "passcode":"Smoke Lingers",
+      "type":"ARMR",
+      "stats":{
+        "armorRating":50,
+        "damageRating":80
+      },
+      "description":"Classified",
+      "set":"SteamWorks Mark VII:Overlord"
+    },
+    "armL":{
+      "manufacturer":{
+        "name":"Tin Hat Industries, Natar",
+        "description":"Experts at constructing logistic machines and steampowered mechs.",
+        "prefix":"THIN"
+      },
+      "partname":"Deaths Touch",
+      "passcode":"Smoke Lingers",
+      "type":"ARML",
+      "stats":{
+        "armorRating":50,
+        "damageRating":80
+      },
+      "description":"Classified",
+      "set":"SteamWorks Mark VII:Overlord"
+    },
+    "legs":{
+      "manufacturer":{
+        "name":"Tin Hat Industries, Natar",
+        "description":"Experts at constructing logistic machines and steampowered mechs.",
+        "prefix":"THIN"
+      },
+      "partname":"Classy Dancers",
+      "passcode":"Smoke Lingers",
+      "type":"LEGS",
+      "stats":{
+        "armorRating":50,
+        "damageRating":50
+      },
+      "description":"Classified",
+      "set":"SteamWorks Mark VII:Overlord"
+    }
+  },
+  "description":"A deadly custom commission from TheBaron, for when diplomancy is required."
+}
+
+
+
+
+
+
+
+
+

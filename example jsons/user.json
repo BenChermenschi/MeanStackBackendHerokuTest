@@ -1,0 +1,9 @@
+{
+    "username":"username",
+    "password":"hashedpassword",
+    "bots":[
+        {bot},
+        {bot},
+        ...
+    ]
+}
