@@ -131,10 +131,10 @@ exports.deletePartAtId=function (req,res) {
 
 //post : update
 exports.postUpdatePartAtId = function(req,res){
-    Part.findOneAndUpdate({_id:req.params.id},req.body,{new:true},function(err,onderdeel)  {
+    Part.findByIdAndUpdate({_id:req.params.id},req.body,{new:true},function(err,onderdeel)  {
         if(err){
             console.log(err);
-            res.status(500).send({message:"could not find manufacturer at id : " + req.params.id});
+            res.status(500).send({message:"could not find part at id : " + req.params.id});
         }else{
             console.log("updating part : ");
             console.log(onderdeel);
