@@ -138,7 +138,10 @@ exports.postUpdatePartAtId = function(req,res){
         }else{
             console.log("updating part : ");
             console.log(onderdeel);
-            res.json(onderdeel);
+            res.status(200).json({
+                message: 'Success',
+                obj: onderdeel
+            }) ;
         }
 
     })
