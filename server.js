@@ -32,11 +32,9 @@ mongoose.connection.on("error",function (err) {
 //further setup
 
 //app usages
-//app.use(cors());
-app.use(cors({origin: '*'}));
+app.use(cors());
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
-
 
 //routes
 var appRoutes = require('./appRoutes');
